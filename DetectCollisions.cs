@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DetectCollisions : MonoBehaviour
 {
+    public AudioSource explosionSound;
     public ScoreManager scoreManager;
     public int scoreToGive;
     // Start is called before the first frame update
@@ -18,5 +19,6 @@ public class DetectCollisions : MonoBehaviour
         scoreManager.IncreaseScore(scoreToGive);
         Destroy(gameObject);
         Destroy(other.gameObject);
+        explosionSound.Play();
     }
 }

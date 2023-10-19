@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioSource gameOverSound;
     public bool isGameOver;
     private GameObject gameOverText;
     // Start is called before the first frame update
@@ -22,6 +23,7 @@ public class GameManager : MonoBehaviour
     {
         if (isGameOver)
         {
+            gameOverSound.Play();
             EndGame();
         }
         else

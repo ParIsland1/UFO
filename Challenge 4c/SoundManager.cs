@@ -3,7 +3,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     public AudioSource laserSound;
-
+    public AudioSource backGroundMusic;
     void Awake()
 {
     GameObject[] musicObjects = GameObject.FindGameObjectsWithTag("Music");
