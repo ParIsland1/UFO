@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioSource buttonClickSound;
+    public AudioSource laserSound;
 
     void Awake()
 {
@@ -20,6 +20,10 @@ public class SoundManager : MonoBehaviour
     
     public void PlayButtonClickSound()
     {
-        buttonClickSound.Play();
+         if (Input.GetKeyDown(KeyCode.Space));
+        {
+            laserSound.Play();
+        }
+        
     }
 }
