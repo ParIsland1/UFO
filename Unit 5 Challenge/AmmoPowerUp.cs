@@ -20,7 +20,7 @@ public class AmmoPowerUp : MonoBehaviour
    
        private void AddAmmo(GameObject player)
        {
-           // Retrieve the player's weapon component (e.g., WeaponController script)
+           // Retrieve the player's weapon component (WeaponController script)
            WeaponController weaponController = player.GetComponent<WeaponController>();
    
            // Check if the player has a weapon component
